@@ -1,0 +1,11 @@
+<!-- {{ products }} -->
+<div><h1>Products</h1></div>
+<div *ngIf="true" class="row">
+  <div *ngFor="let product of products" class="col card p-2 m-2">
+    <img class="card-img-top mt-3" src={{product.image}} alt="Card image cap" height="200px" width="200px">
+            <div class="card-body">
+              <div class="mb-4"><h5 class="card-title">{{product.name}}</h5></div>
+              <div class="mb-4"><p class="card-text">{{product.details}}</p></div>
+              <div class="h-3"><a href="#" class="btn btn-primary d-flex justify-content-center">Buy</a></div>
+  </div>
+</div>
